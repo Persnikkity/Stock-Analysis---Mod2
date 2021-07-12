@@ -11,16 +11,16 @@ The data being analyzed consists of stock performance information for 12 differe
 ## Analysis and Challenges
 
 The first attempt to analyze the data using VBA focused on each stock individually and functioned by scanning through the data set to find activity related to that stock ticker.  The macro constructed to conduct this analysis produced the following output for the year 2017.  This macro had a run time of 0.90625 seconds.  
-![Clean Energy Stock Analysis_2017](Resources/Parent_Category_Outcomes_All.png)
+![Clean Energy Stock Analysis_2017](Resources/VBA_Challenge_2017_originalcode.png)
 
 The macro constructed to conduct the analysis produced the following output for the year 2018.  This macro also had a run time of 0.90625 seconds. 
-![Clean Energy Stock Analysis_2018](Resources/Parent_Category_Outcomes_US.png)
+![Clean Energy Stock Analysis_2018](Resources/VBA_Challenge_2018_originalcode.png)
 
 The macro was then refactored to improve the efficiency of the code.  This refactoring focused on decreasing the run time for the code in order to accommodate potentially larger data sets of stock information for future analyses. Instead of scanning through the data one ticker at a time, the refactoring instead allowed a single scan through of the data and data for each ticker was collected simultaneously.  This refactored macro produced the following output for the year 2017.  This macro had a run time of 0.75 seconds.  
-![Clean Energy Stock Analysis_2017_refactored](Resources/Subcategory_Outcomes_Plays_All.PNG)
+![Clean Energy Stock Analysis_2017_refactored](Resources/VBA_Challenge_2017_refactored.PNG)
 
 The refactored macro produced the following output for the year 2018.  This macro had a run time of 0.7578125 seconds.  
-![Clean Energy Stock Analysis_2018_refactored](Resources/Subcategory_Outcomes_Plays.PNG) 
+![Clean Energy Stock Analysis_2018_refactored](Resources/VBA_Challenge_2018_refactored.PNG) 
 
 Now let's turn to interpreting these outputs to identify stocks that can be recommended to the customer as candidates for investment.  
 
